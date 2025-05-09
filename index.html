@@ -11,7 +11,7 @@
     body {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start; /* Align items at the top */
       align-items: center;
       margin: 0;
       padding: 0;
@@ -24,7 +24,8 @@
       font-size: 6vw; /* Responsive font size based on viewport width */
       font-weight: 700;
       color: #003366;
-      margin: 5vh 0;
+      margin-top: 5vh; /* Margin at the top to give some space from the top of the screen */
+      margin-bottom: 2vh; /* Space between the text and the image */
       text-align: center;
       text-shadow: 4px -4px 4px rgba(0, 0, 0, 0.5); /* Increased text shadow */
     }
@@ -36,7 +37,7 @@
       border-radius: 50%;
       overflow: hidden;
       position: relative;
-      margin: 20px;
+      margin-bottom: 10vh; /* Margin to push it down from the next section */
       border: 2px solid white;
       box-shadow: 10px -20px 5px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
     }
