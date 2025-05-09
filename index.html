@@ -36,14 +36,12 @@
 
     .image-container {
       background-color: antiquewhite;
-      width: 80vw; /* Spans most of the screen width */
-      height: 40vw; /* Make it square to maintain circular shape */
-      border-radius: 50%; /* Circular container */
+      width: 90vw; /* Spans most of the screen width */
+      height: 45vw; /* Height set to maintain oval shape */
+      border-radius: 50% / 40%; /* Oval shape */
       overflow: hidden;
       position: relative;
-      margin-bottom: 10vh;
-      margin-left: 2vh;
-      margin-right: 2vh; /* Margin to push it down from the next section */
+      margin-bottom: 5vh; /* Margin to push it down from the next section */
       border: 2px solid white;
       box-shadow: 8px -25px 3px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
     }
@@ -62,15 +60,22 @@
       .welcome-text {
         font-size: 8vw; /* Larger text on smaller screens */
       }
+
+      .image-container {
+        width: 95vw; /* Nearly full width on smaller screens */
+        height: 50vw; /* Adjust height for better proportion */
+      }
     }
+
     @media (max-width: 480px) {
       .welcome-text {
         font-size: 10vw; /* Larger text for very small devices */
       }
 
       .image-container {
-        width: 95vw; /* Nearly full width on small screens */
-        height: 95vw; /* Adjust height for very small devices */
+        width: 95vw; /* Full width on small screens */
+        height: 50vw; /* Adjust height for very small devices */
+        
       }
     }
   </style>
