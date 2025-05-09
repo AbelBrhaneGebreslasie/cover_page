@@ -1,47 +1,44 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Welcome to our Hotel</title>
-  
+
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
   <style>
+    /* Base styles */
     body {
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin:0px;
+      margin: 0;
+      padding: 0;
       background: linear-gradient(-45deg, black, #02bbf8, white);
       font-family: 'Playfair Display', serif;
     }
 
     .welcome-text {
-      font-size: 3em;
+      font-size: 6vw; /* Use viewport width for responsiveness */
       font-weight: 700;
       color: #003366;
-      margin-bottom: 20px;
-      margin-top: 5vh;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-      letter-spacing: 1px;
-      text-shadow: 4px -4px 4px rgba(0, 0, 0, 0.5); /* Increased text shadow length */
-      
+      margin: 5vh 0;
+      text-align: center;
+      text-shadow: 4px -4px 4px rgba(0, 0, 0, 0.5); /* Increased text shadow */
     }
 
     .image-container {
       background-color: antiquewhite;
-      width: 80vw;
-      height: 40vw;
+      width: 90vw; /* Ensure it spans most of the screen width */
+      height: 50vw; /* Maintain aspect ratio */
       border-radius: 50%;
       overflow: hidden;
       position: relative;
       margin: 20px;
-      border: 2px solid white; /* Added border */
-      box-shadow: 10px -20px 5px rgba(0, 0, 0, 0.5); /* Increased shadow length */   
-     }
+      border: 2px solid white;
+      box-shadow: 10px -20px 5px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
+    }
 
     .image-container img {
       width: 100%;
@@ -51,10 +48,33 @@
       top: 0;
       left: 0;
     }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+      .welcome-text {
+        font-size: 8vw; /* Slightly larger text on smaller screens */
+      }
+
+      .image-container {
+        width: 90vw; /* Full width for tablets */
+        height: 50vw; /* Maintain aspect ratio */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .welcome-text {
+        font-size: 10vw; /* Larger text for very small devices */
+      }
+
+      .image-container {
+        width: 95vw; /* Make the image container almost full width */
+        height: 55vw; /* Maintain aspect ratio */
+      }
+    }
   </style>
 </head>
 <body>
- 
+
   <div id="curved-text" class="welcome-text">Welcome to our Hotel</div>
   <div class="image-container">
     <img src="https://raw.githubusercontent.com/abelbrhanegebreslasie/Frends/main/image/sss.jpg" alt="Hotel Image" />
@@ -69,5 +89,6 @@
       window.location.href = 'https://abelbrhanegebreslasie.github.io/Frends/';
     }, 500000);
   </script>
+
 </body>
 </html>
