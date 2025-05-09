@@ -18,14 +18,12 @@
       height: 100vh; /* Full height of the viewport */
       background: linear-gradient(-45deg, black, #02bbf8, white);
       font-family: 'Playfair Display', serif;
-      padding-left: 5vw; /* Horizontal padding */
-      padding-right: 5vw; /* Horizontal padding */
     }
 
     .welcome-text {
       font-size: 6vw; /* Responsive font size based on viewport width */
       font-weight: 700;
-      color: white;
+      color: #003366;
       margin-top: 5vh; /* Margin at the top to give some space from the top of the screen */
       margin-bottom: 2vh; /* Space between the text and the image */
       text-align: center;
@@ -34,9 +32,9 @@
 
     .image-container {
       background-color: antiquewhite;
-      width: 80vw; /* Spans most of the screen width */
-      height: 80vw; /* Make it square to maintain circular shape */
-      border-radius: 50%; /* Circular container */
+      width: 90vw; /* Horizontal diameter greater than vertical */
+      height: 45vh; /* Vertical diameter smaller than horizontal */
+      border-radius: 50% / 30%; /* Oval shape, adjusted for horizontal/vertical ratio */
       overflow: hidden;
       position: relative;
       margin-bottom: 10vh; /* Margin to push it down from the next section */
@@ -61,7 +59,7 @@
 
       .image-container {
         width: 90vw; /* Full width for tablets */
-        height: 90vw; /* Maintain circular aspect ratio */
+        height: 50vh; /* Maintain aspect ratio for tablets */
       }
     }
 
@@ -72,7 +70,7 @@
 
       .image-container {
         width: 95vw; /* Nearly full width on small screens */
-        height: 95vw; /* Adjust height for very small devices */
+        height: 55vh; /* Adjust height for very small devices */
       }
     }
   </style>
