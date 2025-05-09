@@ -14,10 +14,12 @@
       justify-content: flex-start; /* Align items at the top */
       align-items: center;
       margin: 0;
-      padding: 20px;
+      padding: 0;
       height: 100vh; /* Full height of the viewport */
       background: linear-gradient(-45deg, black, #02bbf8, white);
       font-family: 'Playfair Display', serif;
+      padding-left: 5vw; /* Horizontal padding */
+      padding-right: 5vw; /* Horizontal padding */
     }
 
     .welcome-text {
@@ -32,9 +34,9 @@
 
     .image-container {
       background-color: antiquewhite;
-      width: 90vw; /* Spans most of the screen width */
-      height: 50vh; /* Responsive height based on viewport height */
-      border-radius: 50%;
+      width: 80vw; /* Spans most of the screen width */
+      height: 80vw; /* Make it square to maintain circular shape */
+      border-radius: 50%; /* Circular container */
       overflow: hidden;
       position: relative;
       margin-bottom: 10vh; /* Margin to push it down from the next section */
@@ -59,7 +61,7 @@
 
       .image-container {
         width: 90vw; /* Full width for tablets */
-        height: 50vh; /* Maintain aspect ratio for tablets */
+        height: 90vw; /* Maintain circular aspect ratio */
       }
     }
 
@@ -70,7 +72,7 @@
 
       .image-container {
         width: 95vw; /* Nearly full width on small screens */
-        height: 55vh; /* Adjust height for very small devices */
+        height: 95vw; /* Adjust height for very small devices */
       }
     }
   </style>
