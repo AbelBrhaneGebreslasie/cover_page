@@ -15,12 +15,13 @@
       align-items: center;
       margin: 0;
       padding: 0;
+      height: 100vh; /* Full height of the viewport */
       background: linear-gradient(-45deg, black, #02bbf8, white);
       font-family: 'Playfair Display', serif;
     }
 
     .welcome-text {
-      font-size: 6vw; /* Use viewport width for responsiveness */
+      font-size: 6vw; /* Responsive font size based on viewport width */
       font-weight: 700;
       color: #003366;
       margin: 5vh 0;
@@ -30,8 +31,8 @@
 
     .image-container {
       background-color: antiquewhite;
-      width: 90vw; /* Ensure it spans most of the screen width */
-      height: 50vw; /* Maintain aspect ratio */
+      width: 90vw; /* Spans most of the screen width */
+      height: 50vh; /* Responsive height based on viewport height */
       border-radius: 50%;
       overflow: hidden;
       position: relative;
@@ -52,12 +53,12 @@
     /* Media Queries for Responsiveness */
     @media (max-width: 768px) {
       .welcome-text {
-        font-size: 8vw; /* Slightly larger text on smaller screens */
+        font-size: 8vw; /* Larger text on smaller screens */
       }
 
       .image-container {
         width: 90vw; /* Full width for tablets */
-        height: 50vw; /* Maintain aspect ratio */
+        height: 50vh; /* Maintain aspect ratio for tablets */
       }
     }
 
@@ -67,14 +68,14 @@
       }
 
       .image-container {
-        width: 95vw; /* Make the image container almost full width */
-        height: 55vw; /* Maintain aspect ratio */
+        width: 95vw; /* Nearly full width on small screens */
+        height: 55vh; /* Adjust height for very small devices */
       }
     }
   </style>
 </head>
 <body>
-<p>hagosa</p>
+
   <div id="curved-text" class="welcome-text">Welcome to our Hotel</div>
   <div class="image-container">
     <img src="https://raw.githubusercontent.com/abelbrhanegebreslasie/Frends/main/image/sss.jpg" alt="Hotel Image" />
