@@ -18,28 +18,34 @@
       height: 100vh; /* Full height of the viewport */
       background: linear-gradient(-45deg, black, #02bbf8, white);
       font-family: 'Playfair Display', serif;
+      padding-left: 5vw; /* Horizontal padding */
+      padding-right: 5vw; /* Horizontal padding */
     }
 
     .welcome-text {
       font-size: 6vw; /* Responsive font size based on viewport width */
       font-weight: 700;
-      color: #003366;
+      color: white;
       margin-top: 5vh; /* Margin at the top to give some space from the top of the screen */
       margin-bottom: 2vh; /* Space between the text and the image */
+      margin-left: 2vh;
+      margin-right: 2vh;
       text-align: center;
-      text-shadow: 4px -4px 4px rgba(0, 0, 0, 0.5); /* Increased text shadow */
+      text-shadow: 4px -9px 1px rgba(0, 0, 0, 0.5); /* Increased text shadow */
     }
 
     .image-container {
       background-color: antiquewhite;
-      width: 100vw; /* Full width of the device */
-      height: 100vh; /* Full height of the device */
-      border-radius: 50% / 40%; /* Maintain the oval shape (horizontal > vertical) */
+      width: 80vw; /* Spans most of the screen width */
+      height: 40vw; /* Make it square to maintain circular shape */
+      border-radius: 50%; /* Circular container */
       overflow: hidden;
       position: relative;
-      margin-bottom: 10vh; /* Margin to push it down from the next section */
+      margin-bottom: 10vh;
+      margin-left: 2vh;
+      margin-right: 2vh; /* Margin to push it down from the next section */
       border: 2px solid white;
-      box-shadow: 10px -20px 5px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
+      box-shadow: 8px -25px 3px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
     }
 
     .image-container img {
@@ -57,20 +63,14 @@
         font-size: 8vw; /* Larger text on smaller screens */
       }
 
-      .image-container {
-        width: 100vw; /* Full width for tablets */
-        height: 100vh; /* Full height for tablets */
-      }
-    }
-
     @media (max-width: 480px) {
       .welcome-text {
         font-size: 10vw; /* Larger text for very small devices */
       }
 
       .image-container {
-        width: 100vw; /* Full width on small screens */
-        height: 100vh; /* Full height on small screens */
+        width: 95vw; /* Nearly full width on small screens */
+        height: 95vw; /* Adjust height for very small devices */
       }
     }
   </style>
